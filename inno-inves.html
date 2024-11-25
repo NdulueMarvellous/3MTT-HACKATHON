@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GREEN ENERGY INVESTMENT WEBSITE">
+    <meta name="author" content="Marvellous Ndulue">
+    <title>VERDECK-INNOVATOR-INVESTOR</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/verdeck-logo-file/svg/logo-color.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            padding: 10px 20px;
+            margin-bottom: 10%;
+            background-color: aliceblue;
+            color: black;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo-pic {
+            width: 250px;
+            height: 50px;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgb(110, 212, 178);
+            border-radius: 5px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: aliceblue;
+            padding: 10px;
+            list-style: none;
+            min-width: 150px;
+        }
+
+        .dropdown li {
+            margin: 5px 0;
+        }
+
+        .dropdown a {
+            color: black;
+            padding: 5px;
+            display: block;
+        }
+
+        .nav-links li:hover .dropdown {
+            display: block;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: black;
+            margin: 4px 0;
+        }
+
+        /* Main Container */
+        .container {
+            display: grid;
+            /* Enables grid layout */
+            grid-template-columns: 1fr 1fr;
+            /* Two columns on larger screens */
+            gap: 20px;
+            /* Space between the cards */
+            width: 50%;
+            max-width: auto;
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                width: 200px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+
+            .container {
+                grid-template-columns: 1fr;
+                /* Stacks cards on smaller screens */
+            }
+        }
+
+        /* Card Style */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+            height: 40px;
+            /* Fixed height for consistent alignment */
+        }
+
+        .card button {
+            background-color: #28a745;
+            /* Green color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .card button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="assets/IMG/verdeck-logo-file/svg/logo-no-background.svg" alt="Verdeck-logo" class="logo-pic"></a></div>
+        <ul class="nav-links">
+            <li><a href="#about">About Verdeck</a></li>
+            <li>
+                <a href="#services">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#find-hub">Find a Hub</a></li>
+                    <li><a href="#mentorship">Mentorship</a></li>
+                    <li><a href="#community">Join our Community</a></li>
+                </ul>
+            </li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="inno-inves.html">Login</a></li>
+            <li><a href="inno-inves.html">Signup</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+
+
+    <!-- Responsive Grid Container -->
+    <div class="container">
+        <!-- Innovator Card -->
+        <div class="card" id="innovator-card">
+            <img src="assets/IMG/verdeck-logo-file/svg/logo-no-background.svg" alt="verdeck-logo">
+            <h1>Innovator</h1>
+            <p id="innovator-quotes">"Innovation distinguishes leaders from followers."</p>
+            <button>Learn More</button>
+        </div>
+
+        <!-- Investor Card -->
+        <div class="card" id="investor-card">
+            <img src="assets/IMG/verdeck-logo-file/svg/logo-no-background.svg" alt="verdeck-logo">
+            <h1>Investor</h1>
+            <p id="investor-quotes">"The best investment you can make is in yourself."</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for Hamburger Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+
+
+        // Carousel for Innovator Quotes
+        const innovatorQuotes = [
+            "Innovation distinguishes leaders from followers.",
+            "Creativity is thinking up new things. Innovation is doing new things.",
+            "Innovators change the world."
+        ];
+        const investorQuotes = [
+            "The best investment you can make is in yourself.",
+            "Don’t work for money, make money work for you.",
+            "Investing early gives you a greater advantage."
+        ];
+
+        let innovatorIndex = 0;
+        let investorIndex = 0;
+
+        function updateQuote(cardId, quotesArray, index) {
+            document.getElementById(cardId).innerText = quotesArray[index];
+        }
+
+        setInterval(() => {
+            // Update Innovator Quotes
+            innovatorIndex = (innovatorIndex + 1) % innovatorQuotes.length;
+            updateQuote("innovator-quotes", innovatorQuotes, innovatorIndex);
+
+            // Update Investor Quotes
+            investorIndex = (investorIndex + 1) % investorQuotes.length;
+            updateQuote("investor-quotes", investorQuotes, investorIndex);
+        }, 3000); // Change quote every 3 seconds
+    </script>
+</body>
+
+</html>
