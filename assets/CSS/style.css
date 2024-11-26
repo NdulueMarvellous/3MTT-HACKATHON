@@ -165,6 +165,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    flex-direction: column;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -173,6 +174,14 @@ body {
 .feature-item img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 
