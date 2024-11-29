@@ -190,8 +190,16 @@ body {
 
 
 /* CONTACT US START*/
+.row{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 0 1.5rem;
+    margin: 28.5px;
+}
+
 .contact-hero {
-    background-image: url(/assets/img/con-bg.jpg);
+    background-image: url(/assets/img/4.jpg);
     background-color: rgba(0, 0, 0, 0.4);
     height: 370px;
     background-position: center;
