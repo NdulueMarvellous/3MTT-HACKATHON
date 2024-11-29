@@ -193,7 +193,6 @@ body {
 .row{
     display: flex;
     flex-direction: row;
-    position: relative;
     padding: 0 1.5rem;
     margin: 28.5px;
 }
@@ -254,7 +253,8 @@ body {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-top: 150px;
+    text-wrap: revert-layer;
 }
 
 .contact-sub-title {
@@ -323,7 +323,6 @@ label {
     flex-wrap: wrap;
     margin-left: -23.5px;
     margin-right: -15px;
-    position: relative;
     padding: 0, 15px, 0, 15px;
 }
 
