@@ -397,9 +397,9 @@ input {
 footer .footer-cols {
     background: #05070c;
     padding: 60px 0 30px 0;
-    display: grid;
-    grid-gap: 60px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+        justify-content: center;
+        align-items: center;
     font-size: 16px;
     height: 399px;
 }
@@ -438,19 +438,11 @@ footer .footer-bottom {
     line-height: 20px;
 }
 
-.footer .footer-cols .footer-info .lam-icon {
-    height: 35px;
-    margin-bottom: 20px;
-    vertical-align: middle;
-}
-
-.footer-info h3 {
+.footer-info img.logo-pic {
     font-size: 20px;
-    font-weight: 100;
-    color: #fff;
-    margin-bottom: 25px;
-    width: 240px;
-    height: 19px;
+    margin-bottom: px;
+    width: 250px;
+    height: auto;
 }
 
 footer .footer-cols .footer-info p {
